@@ -42,13 +42,13 @@ Note: replace branch_name with your name and surname (NO SPACES)
 * Asserts:
     * [Sample3.java](../master/src/selenium/sample/Sample3.java)
     * [Sample3Task.java](../master/src/selenium/sample/Sample3Task.java)
-### Still to come:
 * Actions (click, send keys):
     * [Sample4.java](../master/src/selenium/sample/Sample4.java)
     * [Sample4Task.java](../master/src/selenium/sample/Sample4Task.java)
 * Alerts:
     * [Sample5.java](../master/src/selenium/sample/Sample5.java)
     * [Sample5Task.java](../master/src/selenium/sample/Sample5Task.java)
+### Still to come:
 * Locators (xPath, CSS):
     * [Sample6.java](../master/src/selenium/sample/Sample6.java)
     * [Sample6Task.java](../master/src/selenium/sample/Sample6Task.java)

@@ -35,7 +35,7 @@ public class Sample5 {
 
     @Test
     public void alertOnOpeningPage() throws Exception {
-        driver.get("https://kristinek.github.io/site/examples/alerted_page");
+        driver.get("https://kristinek.github.io/site/examples/al_p");
 //        org.openqa.selenium.UnhandledAlertException: unexpected alert open:
 //        driver.findElement(By.id("heading")).getText();
         Alert alert = driver.switchTo().alert();
@@ -52,7 +52,7 @@ public class Sample5 {
         assertEquals("I am an alert box!", alert.getText());
 
         alert.accept();
-        assertEquals("", driver.findElement(By.id("textForAlerts")).getText());
+            assertEquals("", driver.findElement(By.id("textForAlerts")).getText());
     }
 
 
@@ -79,7 +79,7 @@ public class Sample5 {
 
     @Test
     public void popUpEnterNumber() throws Exception {
-        String enterKeys = "3";
+        String enterKeys = "5";
         driver.findElement(By.className("w3-khaki")).click();
         Alert alert = driver.switchTo().alert();
         assertEquals("Please enter a number", alert.getText());
