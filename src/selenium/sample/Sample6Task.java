@@ -70,10 +70,12 @@ public class Sample6Task {
         System.out.println(driver.findElement(By.cssSelector(".test")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 2"
-//        System.out.println(driver.findElement(By.cssSelector("")).getText());
+        System.out.println(driver.findElement(By.cssSelector("#test1 > p:nth-child(2)")).getText());
+        System.out.println(driver.findElement(By.cssSelector("#test1 > p:nth-of-type(2)")).getText());
+        System.out.println(driver.findElement(By.cssSelector(".twoTest")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 3"
-//        System.out.println(driver.findElement(By.cssSelector("")).getText());
+        System.out.println(driver.findElement(By.cssSelector("")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "This is also a button"
 //        System.out.println(driver.findElement(By.cssSelector("")).getAttribute("value"));
