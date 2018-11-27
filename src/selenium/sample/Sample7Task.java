@@ -65,12 +65,29 @@ public class Sample7Task {
     public void selectRadioButton() throws Exception {
 //         TODO:
 //        check that none of the radio are selected
+        List<WebElement> radioButtons = driver.findElements(By.cssSelector(".w3-check[type='radio']"));
+        for (WebElement radioButton : radioButtons) {
+            assertFalse(radioButton.isSelected());
+        }
 //        select  "Option 3"
+        radioButtons.get(2).click();
 //        check that "Option 1" and "Option 2' are not select, but "Option 3" is selected
+        assertFalse(radioButtons.get(0).isSelected());
+        assertFalse(radioButtons.get(1).isSelected());
+        assertTrue(radioButtons.get(2).isSelected());
 //        select  "Option 1"
+        radioButtons.get(0).click();
 //        check that "Option 2" and "Option 3' are not select, but "Option 1" is selected
+        assertTrue(radioButtons.get(0).isSelected());
+        assertFalse(radioButtons.get(1).isSelected());
+        assertFalse(radioButtons.get(2).isSelected());
 //        click result
+        driver.findElement(By.id("result_button_ratio")).click();
 //        check that 'You selected option: Option 1' text is being displayed
+        assertEquals(driver.findElement(By.id("result_radio")).getText(), "You selected option: Option 1");
+        assertTrue(driver.findElement(By.id("result_radio")).isDisplayed());
+
+        System.out.println();
     }
 
     @Test
