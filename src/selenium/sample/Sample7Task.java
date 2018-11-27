@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -86,19 +87,26 @@ public class Sample7Task {
 //        check that 'You selected option: Option 1' text is being displayed
         assertEquals(driver.findElement(By.id("result_radio")).getText(), "You selected option: Option 1");
         assertTrue(driver.findElement(By.id("result_radio")).isDisplayed());
-
-        System.out.println();
     }
 
     @Test
     public void selectOption() throws Exception {
-//         TODO:
+        Select dd = new Select(driver.findElement(By.id("vfb-12")));
 //        select "Option 3" in Select
+        dd.selectByValue("value3");
 //        check that selected option is "Option 3"
+        assertEquals("Option 3", dd.getFirstSelectedOption().getText());
 //        select "Option 2" in Select
+        dd.selectByIndex(2);
 //        check that selected option is "Option 2"
+        assertEquals("value2", dd.getFirstSelectedOption().getAttribute("value"));
 //        click result
+        driver.findElement(By.id("result_button_select")).click();
 //        check that 'You selected option: Option 2' text is being displayed
+        assertEquals(driver.findElement(By.id("result_select")).getText(), "You selected option: Option 2");
+        assertTrue(driver.findElement(By.id("result_select")).isDisplayed());
+
+        System.out.println();
     }
 
     @Test
