@@ -48,6 +48,7 @@ public class Sample6Task {
         System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 4"
         System.out.println(driver.findElement(By.xpath("//*[@id='test3']/p[2]")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='test3']/p[@class='test'][2]")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 5"
 //        System.out.println(driver.findElement(By.xpath("")).getText());
