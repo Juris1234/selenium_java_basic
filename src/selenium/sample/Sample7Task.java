@@ -82,7 +82,7 @@ public class Sample7Task {
         assertTrue(radioButtons.get(0).isSelected());
         assertFalse(radioButtons.get(1).isSelected());
         assertFalse(radioButtons.get(2).isSelected());
-        for (int i; i < radioButtons.size(); i++) {
+        for (int i = 0; i < radioButtons.size(); i++) {
             if (i == 0) {
                 assertTrue(radioButtons.get(i).isSelected());
             } else {
