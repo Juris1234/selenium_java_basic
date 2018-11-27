@@ -3,8 +3,16 @@ package selenium.sample;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class Sample7Task {
     WebDriver driver;
@@ -32,11 +40,24 @@ public class Sample7Task {
     public void selectCheckBox() throws Exception {
 //         TODO:
 //        check that none of the checkboxes are ticked
+        List<WebElement> checkboxes = driver.findElements(By.cssSelector(".w3-check[type='checkbox']"));
+        for (WebElement checkbox : checkboxes) {
+            assertFalse(checkbox.isSelected());
+        }
 //        tick  "Option 2"
+        driver.findElement(By.cssSelector(".w3-check[value='Option 2']")).click();
 //        check that "Option 1" and "Option 3" are not ticked, but "Option 2" is ticked
+        assertFalse(driver.findElement(By.cssSelector(".w3-check[value='Option 1']")).isSelected());
+        assertFalse(driver.findElement(By.cssSelector(".w3-check[value='Option 3']")).isSelected());
+        assertTrue(driver.findElement(By.cssSelector(".w3-check[value='Option 2']")).isSelected());
+
 //        tick  "Option 3"
+        driver.findElement(By.id("vfb-6-2")).click();
 //        click result
+        driver.findElement(By.cssSelector(".w3-small#result_button_checkbox")).click();
 //        check that text 'You selected value(s): Option 2, Option 3' is being displayed
+        assertEquals(driver.findElement(By.id("result_checkbox")).getText(), "You selected value(s): Option 2, Option 3");
+        assertTrue(driver.findElement(By.id("result_checkbox")).isDisplayed());
     }
 
 
