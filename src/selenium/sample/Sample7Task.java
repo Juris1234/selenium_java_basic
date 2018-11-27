@@ -82,6 +82,13 @@ public class Sample7Task {
         assertTrue(radioButtons.get(0).isSelected());
         assertFalse(radioButtons.get(1).isSelected());
         assertFalse(radioButtons.get(2).isSelected());
+        for (int i; i < radioButtons.size(); i++) {
+            if (i == 0) {
+                assertTrue(radioButtons.get(i).isSelected());
+            } else {
+                assertFalse(radioButtons.get(i).isSelected());
+            }
+        }
 //        click result
         driver.findElement(By.id("result_button_ratio")).click();
 //        check that 'You selected option: Option 1' text is being displayed
