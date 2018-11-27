@@ -48,13 +48,13 @@ Note: replace branch_name with your name and surname (NO SPACES)
 * Alerts:
     * [Sample5.java](../master/src/selenium/sample/Sample5.java)
     * [Sample5Task.java](../master/src/selenium/sample/Sample5Task.java)
-### Still to come:
 * Locators (xPath, CSS):
     * [Sample6.java](../master/src/selenium/sample/Sample6.java)
     * [Sample6Task.java](../master/src/selenium/sample/Sample6Task.java)
 * Actions (checkbox, radio button and option selector) + bonus of calendar:
     * [Sample7.java](../master/src/selenium/sample/Sample7.java)
     * [Sample7Task.java](../master/src/selenium/sample/Sample7Task.java)
+### Still to come:
 * Styles:
     * [Sample8.java](../master/src/selenium/sample/Sample8.java)
     * [Sample8Task.java](../master/src/selenium/sample/Sample8Task.java)
@@ -69,9 +69,11 @@ Note: replace branch_name with your name and surname (NO SPACES)
     
 ---
 ### Individual Tasks:
-
+ * [Task1](./master/src/selenium/tasks/Task1.java)
+ * [Task2](./master/src/selenium/tasks/Task1.java)
+ 
 #### Test on locators
-
+[click here](https://docs.google.com/forms/d/e/1FAIpQLSfVURa4wYHQrKUzXNwg5JeduAfpBuGQkpmMuHIF6Wfd9ivWEQ/viewform?usp=sf_link)
 ---
 ### Bonuses in case of boredom
 * Driver Navigation:
