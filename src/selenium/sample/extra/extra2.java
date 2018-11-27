@@ -27,7 +27,7 @@ public class extra2 {
 
     @After
     public void endingTests() throws Exception {
-        driver.close();
+        driver.quit();
     }
 
     @Test
