@@ -51,10 +51,11 @@ public class Sample6Task {
         System.out.println(driver.findElement(By.xpath("//*[@id='test3']/p[@class='test'][2]")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 5"
-//        System.out.println(driver.findElement(By.xpath("")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='test2']/p")).getText());
         System.out.println("--------------------------");
 //        1-2 ways to find text: "This is also a button"
-//        System.out.println(driver.findElement(By.xpath("")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='buttonId']")).getAttribute("value"));
+        System.out.println(driver.findElement(By.xpath("//input[2]")).getAttribute("value"));
         System.out.println("--------------------------");
     }
 
@@ -62,9 +63,20 @@ public class Sample6Task {
     public void findElementByCssName() throws Exception {
 //         TODO:
 //        1-2 ways to find text: "Heading 2 text"
+        System.out.println(driver.findElement(By.cssSelector("#heading_2")).getText());
+        System.out.println(driver.findElement(By.cssSelector("h2#heading_2")).getText());
+        System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 1"
+        System.out.println(driver.findElement(By.cssSelector(".test")).getText());
+        System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 2"
+//        System.out.println(driver.findElement(By.cssSelector("")).getText());
+        System.out.println("--------------------------");
 //        1-2 ways to find text: "Test Text 3"
+//        System.out.println(driver.findElement(By.cssSelector("")).getText());
+        System.out.println("--------------------------");
 //        1-2 ways to find text: "This is also a button"
+//        System.out.println(driver.findElement(By.cssSelector("")).getAttribute("value"));
+        System.out.println("--------------------------");
     }
 }
