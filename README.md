@@ -70,7 +70,7 @@ Note: replace branch_name with your name and surname (NO SPACES)
 ---
 ### Individual Tasks:
  * [Task1](./master/src/selenium/tasks/Task1.java)
- * [Task2](./master/src/selenium/tasks/Task1.java)
+ * [Task2](./master/src/selenium/tasks/Task2.java)
  
 #### Test on locators
 [click here](https://docs.google.com/forms/d/e/1FAIpQLSfVURa4wYHQrKUzXNwg5JeduAfpBuGQkpmMuHIF6Wfd9ivWEQ/viewform?usp=sf_link)
