@@ -32,26 +32,36 @@ public class Task2 {
     @Test
     public void emptyFeedbackPage() throws Exception {
         // click "Send" without entering any data
-        // check fields and check button colors
+        // check fields are empty or null
+        // check button colors
+        // (green with white letter and red with white letters)
     }
     @Test
     public void notEmptyFeedbackPage() throws Exception {
         // fill the whole form, click "Send"
-        // check fields and check button colors
+        // check fields are filled correctly
+        // check button colors
+        // (green with white letter and red with white letters)
     }
     @Test
     public void yesOnWithNameFeedbackPage() throws Exception {
-        // enter name, click "Send", click "Yes"
-        // check message text, colors
+        // enter only name
+        // click "Send"
+        // click "Yes"
+        // check message text: "Thank you, NAME, for your feedback!"
+        // color of text is white with green on the background
     }
     @Test
     public void yesOnWithoutNameFeedbackPage() throws Exception {
-        // click "Send", click "Yes"
-        // check message text, colors
+        // click "Send" (without entering anything
+        // click "Yes"
+        // check message text: "Thank you for your feedback!"
+        // color of text is white with green on the background
     }
     @Test
     public void noOnFeedbackPage() throws Exception {
-        // fill the whole form, click "Send"
-        // check that everything is still filled correctly
+        // fill the whole form
+        // click "Send"
+        // check fields are filled correctly
     }
 }
