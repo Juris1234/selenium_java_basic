@@ -63,9 +63,9 @@ Note: replace branch_name with your name and surname (NO SPACES)
     * [Sample9Task.java](../master/src/selenium/sample/Sample9Task.java)
 * Into to Page Object:    
     * [Sample10.java](../master/src/selenium/sample/Sample10.java)
-    * [GenericPageSample.java](../master/src/pages/GenericPageSample.java)
-    * [MainPageSample.java](../master/src/pages/MainPageSample.java)
-    * [PageSample.java](../master/src/pages/PageSample.java)
+    * [GenericSamplePage.java](../master/src/pages/GenericSamplePage.java)
+    * [AgeSamplePage.java](../master/src/pages/AgeSamplePage.java)
+    * [AgeSubmittedSamplePage.java](../master/src/pages/AgeSubmittedSamplePage.java)
     
 ---
 ### Individual Tasks:
