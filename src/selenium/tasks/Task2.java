@@ -67,6 +67,7 @@ public class Task2 {
     public void noOnFeedbackPage() throws Exception {
         // fill the whole form
         // click "Send"
+        // click "No"
         // check fields are filled correctly
     }
 }
