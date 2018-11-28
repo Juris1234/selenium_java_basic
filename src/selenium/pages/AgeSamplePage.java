@@ -3,18 +3,21 @@ package selenium.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
 
 public class AgeSamplePage extends GenericSamplePage {
-    @FindBy(how = How.ID, using = "name")
-    private WebElement nameInput;
-    @FindBy(how = How.NAME, using = "age")
+    @FindBy(how = How.ID, using = "name") // By.id("name")
+    private WebElement nameInput; // WebElement nameInput = driver.findElement(By.id("name"));
+    @FindBy(how = How.NAME, using = "age") // By.name("age")
     private WebElement ageInput;
     @FindBy(how = How.ID, using = "submit")
     private WebElement submitButton;
-    @FindBy(how = How.CLASS_NAME, using = "error")
+    @FindBy(how = How.CLASS_NAME, using = "error") // By.className("error)
     private WebElement errorText;
 
     public void enterName(String name) {
@@ -37,6 +40,12 @@ public class AgeSamplePage extends GenericSamplePage {
 
     public void enterNameAgeAndClickSubmit(String name, int age) {
         enterNameAgeAndClickSubmit(name, String.valueOf(age));
+    }
+
+    public void enterNameAgeAndClickSubmit() {
+        enterName("admib");
+        enterAge("pass");
+        submitButton.click();
     }
 
     public void enterNameAgeAndClickSubmit(String name, String age) {

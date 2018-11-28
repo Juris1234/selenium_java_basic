@@ -23,12 +23,35 @@ public class Task2 {
     }
 
     @Test
-    public void feedback() {
-// TODO:
-//        fill in "name", "age", select 1 or more language, select genre, select option, add a comment
-//        check that the button send is blue with white letters
-//        click "send"
-//        check that the feedback was filled correctly
-//        check that the button yes is green and no is red but both have white letters
+    public void initialFeedbackPage() throws Exception {
+        // check that all field are empty and no tick are clicked
+        // "Don't know" is selected in "Genre"
+        // "Choose your option" in "How do you like us?"
+        // check that the button send is blue with white letters
+    }
+    @Test
+    public void emptyFeedbackPage() throws Exception {
+        // click "Send" without entering any data
+        // check fields and check button colors
+    }
+    @Test
+    public void notEmptyFeedbackPage() throws Exception {
+        // fill the whole form, click "Send"
+        // check fields and check button colors
+    }
+    @Test
+    public void yesOnWithNameFeedbackPage() throws Exception {
+        // enter name, click "Send", click "Yes"
+        // check message text, colors
+    }
+    @Test
+    public void yesOnWithoutNameFeedbackPage() throws Exception {
+        // click "Send", click "Yes"
+        // check message text, colors
+    }
+    @Test
+    public void noOnFeedbackPage() throws Exception {
+        // fill the whole form, click "Send"
+        // check that everything is still filled correctly
     }
 }
