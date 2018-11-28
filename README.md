@@ -54,7 +54,6 @@ Note: replace branch_name with your name and surname (NO SPACES)
 * Actions (checkbox, radio button and option selector) + bonus of calendar:
     * [Sample7.java](../master/src/selenium/sample/Sample7.java)
     * [Sample7Task.java](../master/src/selenium/sample/Sample7Task.java)
-### Still to come:
 * Styles:
     * [Sample8.java](../master/src/selenium/sample/Sample8.java)
     * [Sample8Task.java](../master/src/selenium/sample/Sample8Task.java)
@@ -63,9 +62,9 @@ Note: replace branch_name with your name and surname (NO SPACES)
     * [Sample9Task.java](../master/src/selenium/sample/Sample9Task.java)
 * Into to Page Object:    
     * [Sample10.java](../master/src/selenium/sample/Sample10.java)
-    * [GenericSamplePage.java](../master/src/pages/GenericSamplePage.java)
-    * [AgeSamplePage.java](../master/src/pages/AgeSamplePage.java)
-    * [AgeSubmittedSamplePage.java](../master/src/pages/AgeSubmittedSamplePage.java)
+    * [GenericSamplePage.java](../master/src/selenium/pages/GenericSamplePage.java)
+    * [AgeSamplePage.java](../master/src/selenium/pages/AgeSamplePage.java)
+    * [AgeSubmittedSamplePage.java](../master/src/selenium/pages/AgeSubmittedSamplePage.java)
     
 ---
 ### Individual Tasks:
