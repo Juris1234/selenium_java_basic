@@ -84,7 +84,7 @@ Note: replace branch_name with your name and surname (NO SPACES)
  * Calendar picker:   
     * [Sample7Task.java](../master/src/selenium/sample/Sample7Task.java) -> `chooseDateViaCalendarBonus()` and `chooseDateViaTextBoxBonus()`
  * Page Object + Page Factory:
-    * [Task4Bonus.java](../master/src/selenium/tasks/Task3Bonus.java)
+    * [Task3Bonus.java](../master/src/selenium/tasks/Task3Bonus.java)
     
 ---
 ### Switching to Cucumber project

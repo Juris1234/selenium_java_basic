@@ -52,7 +52,7 @@ public class Sample5 {
         assertEquals("I am an alert box!", alert.getText());
 
         alert.accept();
-            assertEquals("", driver.findElement(By.id("textForAlerts")).getText());
+        assertEquals("", driver.findElement(By.id("textForAlerts")).getText());
     }
 
 

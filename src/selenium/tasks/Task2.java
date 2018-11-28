@@ -29,6 +29,7 @@ public class Task2 {
         // "Choose your option" in "How do you like us?"
         // check that the button send is blue with white letters
     }
+
     @Test
     public void emptyFeedbackPage() throws Exception {
         // click "Send" without entering any data
@@ -36,6 +37,7 @@ public class Task2 {
         // check button colors
         // (green with white letter and red with white letters)
     }
+
     @Test
     public void notEmptyFeedbackPage() throws Exception {
         // fill the whole form, click "Send"
@@ -43,6 +45,7 @@ public class Task2 {
         // check button colors
         // (green with white letter and red with white letters)
     }
+
     @Test
     public void yesOnWithNameFeedbackPage() throws Exception {
         // enter only name
@@ -51,6 +54,7 @@ public class Task2 {
         // check message text: "Thank you, NAME, for your feedback!"
         // color of text is white with green on the background
     }
+
     @Test
     public void yesOnWithoutNameFeedbackPage() throws Exception {
         // click "Send" (without entering anything
@@ -58,6 +62,7 @@ public class Task2 {
         // check message text: "Thank you for your feedback!"
         // color of text is white with green on the background
     }
+
     @Test
     public void noOnFeedbackPage() throws Exception {
         // fill the whole form
