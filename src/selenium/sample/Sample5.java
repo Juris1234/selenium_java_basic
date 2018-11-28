@@ -84,7 +84,7 @@ public class Sample5 {
         Alert alert = driver.switchTo().alert();
         assertEquals("Please enter a number", alert.getText());
 
-        alert.sendKeys(enterKeys);
+        alert.sendKeys("75");
         alert.accept();
         assertTrue(driver.findElement(By.id("textForAlerts")).getText().contains("instead of " + enterKeys));
     }

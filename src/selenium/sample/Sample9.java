@@ -25,10 +25,14 @@ public class Sample9 {
         String libWithDriversLocation = System.getProperty("user.dir") + "\\lib\\";
         System.setProperty("webdriver.chrome.driver", libWithDriversLocation + "chromedriver.exe");
         driver = new ChromeDriver();
+
         wait = (WebDriverWait) new WebDriverWait(driver, 10).ignoring(StaleElementReferenceException.class);
+
         driver.get("https://kristinek.github.io/site/examples/sync");
+
         System.out.println(driver.findElement(By.id("magic_text")).getText());
         assertEquals("This text magicly changes color", driver.findElement(By.id("magic_text")).getText());
+
         startTime = System.currentTimeMillis();
     }
 
@@ -53,6 +57,7 @@ public class Sample9 {
     @Test
     public void implicitWaitExample() throws Exception {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.findElement(By.xpath("//*[@id='magic_text']/*[text()=\"What is this magic? It's dev magic~\"]"));
 //        driver.findElement(By.id("asd"));
         magicTextCheck();
@@ -63,7 +68,7 @@ public class Sample9 {
 //        check that the element is present on page
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='magic_text']/*[text()=\"What is this magic? It's dev magic~\"]")));
 //        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("asd")));
-        driver.findElement(By.xpath("//*[@id='magic_text']/*[text()=\"What is this magic? It's dev magic~\"]"));
+//        driver.findElement(By.xpath("//*[@id='magic_text']/*[text()=\"What is this magic? It's dev magic~\"]"));
         magicTextCheck();
     }
 
@@ -89,7 +94,7 @@ public class Sample9 {
 
     @Test
     public void explicitWaitExample5() throws Exception {
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//p"), "What is this magic? It's dev magic~"));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//p"), "asfafdsdfs"));
         magicTextCheck();
     }
 }
